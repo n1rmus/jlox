@@ -54,7 +54,7 @@ public class Environment {
     Environment ancestor(int distance) {
         Environment environment = this;
         for (int i = 0; i < distance; i++) {
-            environment = enclosing.enclosing;
+            environment = environment.enclosing;
         }
 
         return environment;
